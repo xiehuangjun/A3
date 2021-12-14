@@ -14,7 +14,7 @@ app = Flask(__name__)
 @app.route('/register', methods = ['POST'])
 @cross_origin()
 def register():
-    mysql = pymysql.connect(user = config["MYSQL"]["user"], password = config["MYSQL"]["password"], port = int(config["MYSQL"]["port"]), host = config["MYSQL"]["host"])
+    mysql = pymysql.connect(user = config['MYSQL']["user"], password = config['MYSQL']["password"], port = int(config['MYSQL']["port"]), host = config['MYSQL']["host"])
     cur = mysql.cursor()
 
     data_json = {}
@@ -49,7 +49,7 @@ def register():
 @app.route('/login', methods = ['POST'])
 @cross_origin()
 def login():
-    mysql = pymysql.connect(user = config['MYSQL']["user"], password = config['MYSQL']["password"], port = int(config["MYSQL"]["port"]), host = config['MYSQL']["host"])
+    mysql = pymysql.connect(user = config['MYSQL']["user"], password = config['MYSQL']["password"], port = int(config['MYSQL']["port"]), host = config['MYSQL']["host"])
     cur = mysql.cursor()
     data_json = {}
     
