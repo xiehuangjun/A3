@@ -3,7 +3,7 @@ RegForm.addEventListener('submit', function (e) {             // Confirm whether
     e.preventDefault();
 
     var formdata = new FormData(document.getElementById('RegForm'));      // Creating a new formdata and listen the value of the form which named myForm in HTML
-    fetch("http://140.118.121.96:5066/register",{
+    fetch("http://IP:5000/register",{
             method: 'POST',
             body: formdata
         })
