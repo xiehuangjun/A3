@@ -2,7 +2,7 @@
 sudo yum update -y
 sudo yum install git -y
 git clone https://github.com/xiehuangjun/A3.git
-sed -i -e 's/host_value/database-1.c9utezksdmjh.us-east-1.rds.amazonaws.com/g' -e 's/port_value/3306/g' -e 's/user_value/root/g' -e 's/password_value/12345678/g' ~/A3/API/config.ini
+sed -i -e 's/host_value/["Database's name"]/g' -e 's/port_value/["Port"]/g' -e 's/user_value/["User"]/g' -e 's/password_value/["Password"]/g' ~/A3/API/config.ini
 sudo yum install mysql-devel gcc python-pip python-devel -y
 sudo pip3 install PyMySQL
 cd ~/A3/API/create_table
