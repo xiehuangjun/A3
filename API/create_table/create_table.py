@@ -3,7 +3,7 @@ import pymysql, json, configparser, os, datetime
 from pymysql.connections import DEFAULT_CHARSET
 
 path = os.path.abspath('.')
-cfgpath = path.split('AWS_A3')[0] + 'AWS_A3/config.ini'
+cfgpath = path.split('A3')[0] + 'A3/config.ini'
 
 config = configparser.ConfigParser()
 config.read(cfgpath)
