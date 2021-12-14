@@ -1,0 +1,340 @@
+li{
+    display: flex;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.2em 0 1.2em;
+    height: 60%;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1d1d1d;
+  }
+  
+  header {
+    padding: 0 2% 0 2%;
+    display: flex;
+    height: 4em;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 999999;
+  }
+  .logo {
+    align-self: center;
+    cursor: pointer;
+  }
+  .empty_space_in_header {
+    flex-grow: 1;
+  }
+  .button_enter {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.2em 0 1.2em;
+    height: 60%;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 1em;
+  }
+  .button_enter:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .button_enter:active {
+    background: #e0e0e0;
+  }
+  .button_enter p {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .basket {
+    margin-left: 1em;
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  .MainPage {
+    padding: 4em 2% 0 2%;
+  }
+  .Search {
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    width: 100%;
+    margin-top: 3em;
+  }
+  .Search:focus {
+    outline: 0;
+  }
+  .line-under-search {
+    margin-top: -2px;
+    color: #757575;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+  h4 {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    margin-bottom: 2em;
+  }
+  .picture_food {
+    width: 400px;
+    height: 350px;
+  }
+  .namerestaurant {
+    display: block;
+    margin-top: 0.9em;
+    color: #1d1d1d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 24px;
+  }
+  .moneykitchen {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+  }
+  .timerange {
+    margin-top: 0.5em;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  
+  footer {
+    margin-top: 4em;
+    padding: 4em 2% 0 2%;
+    background: #262626;
+  }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logoinfooter {
+    margin-bottom: 2em;
+  }
+  .line-in-footer {
+    margin-bottom: 2em;
+    opacity: 0.4;
+  }
+  .help-in-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    margin-bottom: 4em;
+  }
+  .help-in-footer-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .help-in-footer a {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 2em;
+    align-self: flex-start;
+  }
+  .help-in-footer-item a:first-child {
+    margin-top: 1em;
+  }
+  .help-in-footer-item a:last-child {
+    margin-bottom: 0;
+  }
+  .dropbtn {
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 13px;
+    line-height: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.9em 0.6em 0.9em 1.3em;
+    border-radius: 2px;
+  }
+  .language {
+    margin: 0;
+  }
+  .world1 {
+    display: none;
+  }
+  .world2 {
+    margin-right: 1.3em;
+  }
+  .Shape {
+    margin-left: 4em;
+  }
+  .dropdown {
+    position: relative;
+    display: block;
+    margin-bottom: 1.3em;
+    align-self: flex-start;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #57ad56;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 172px;
+  }
+  #English {
+    color: white;
+    padding: 12px 4em;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 0;
+  }
+  .dropdown-content:hover {
+    background-color: #37a144;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #57ad56;
+  }
+  .UberEats-in-footer p {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 1.5em;
+  }
+  .facebook {
+    margin-right: 0.5em;
+  }
+  .twitter {
+    margin-right: 0.5em;
+  }
+  .app-in-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .app-in-footer a:first-child {
+    margin-right: 1.5em;
+  }
+  .app-in-footer a:last-child {
+    margin-left: 1.5em;
+  }
+  .laws-in-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    width: 85%;
+  }
+  .laws-in-footer a {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .button-arrow {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    box-sizing: border-box;
+    background: #59bd5a;
+    border-radius: 2px;
+    z-index: 100;
+    right: 16px;
+    bottom: 24px;
+  }
+  @media screen and (min-width: 992px) {
+    header {
+      padding: 0 7.2% 0 6.7%;
+    }
+    .MainPage {
+      padding: 4em 7.2% 0 6.7%;
+    }
+    footer {
+      padding: 4em 7.2% 0 6.7%;
+    }
+    .world1 {
+      display: block;
+      margin-right: 1.3em;
+    }
+    .world2 {
+      display: none;
+    }
+    .Shape {
+      margin-left: 8em;
+    }
+    .dropdown-content {
+      width: 223px;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    .laws-in-footer {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .basket {
+      display: none;
+    }
+    .help-in-footer {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4em;
+      grid-gap: 0;
+    }
+    .help-in-footer-item a:first-child {
+      margin-top: 2em;
+    }
+    #a-in-footer {
+      margin-top: 3em;
+    }
+    .app-in-footer a:first-child {
+      margin-right: 1em;
+    }
+    .app-in-footer a:last-child {
+      margin-left: 1em;
+    }
+    .laws-in-footer {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1em;
+      align-items: flex-start;
+    }
+    .laws-in-footer a {
+      margin-bottom: 2em;
+    }
+    .button-arrow {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  

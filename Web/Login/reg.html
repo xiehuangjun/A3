@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Cherry"/>
+    <title>RTLab Eat</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/product/">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="style-reg.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <header class="site-header sticky-top py-1" style="height: 50px;">
+      <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 d-none d-md-inline-block" href="../index.html">RTLab Eats</a>
+        <a class="empty_space_in_header" href="#"></a>
+        <a class="py-2 d-none d-md-inline-block" href="login.html">Account</a>
+      </nav>
+    </header>
+    <main class="form-signin">
+      <div class="form-signin">
+        <form name="RegForm" id="RegForm" method="POST" action="http://140.118.121.96:5066/register" enctype="multipart/form-data">
+          <img class="mb-4" src="../images/pngwing.com.png" alt="" width="72" height="65">
+          <h1 class="h3 mb-3 fw-normal">Register an account</h1>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="User_account">
+            <label for="floatingInput">Account</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" name="User_password">
+            <label for="floatingInput">Password</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="User_cellphone">
+            <label for="floatingInput">Please input your cellphone number</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="User_email">
+            <label for="floatingInput">Please input your Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" name="User_city">
+            <label for="floatingInput">Please input your city</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-secondary" type="submit">Register</button>
+        </form>
+    </main>
+  <script src="reg.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
