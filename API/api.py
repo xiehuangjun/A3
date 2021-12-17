@@ -4,7 +4,7 @@ from flask_cors import cross_origin
 from flask_api import status
 
 path = os.path.abspath('.')
-cfgpath = path.split('API')[0] + 'API/config.ini'
+cfgpath = path.split('A3/API')[0] + 'A3/API/config.ini'
 
 config = configparser.ConfigParser()
 config.read(cfgpath)
