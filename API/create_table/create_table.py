@@ -3,7 +3,7 @@ import pymysql, json, configparser, os, datetime
 from pymysql.connections import DEFAULT_CHARSET
 
 path = os.path.abspath('.')
-cfgpath = path.split('A3/API')[0] + 'A3/API/config.ini'
+cfgpath = path.split('API')[0] + 'API/config.ini'
 
 config = configparser.ConfigParser()
 config.read(cfgpath)
