@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo yum update -y
 sudo yum install git -y
-sudo su
 cd /home/ec2-user
 sudo git clone https://github.com/xiehuangjun/A3.git
 cd A3/API
