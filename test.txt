@@ -1,2 +1,2 @@
-## T
+## Test on your ec2 to prove the function of the auto-scaling.
 stress -c 1
