@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo yum update -y
 sudo yum install git -y
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
 cd /
 sudo git clone https://github.com/xiehuangjun/A3.git
 cd A3/
