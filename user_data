@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo yum update -y
 sudo yum install git -y
-cd ~
+cd /
 sudo git clone https://github.com/xiehuangjun/A3.git
 cd A3/API
 sudo sed -i -e 's/host_value/[Database's endpoint]/g' -e 's/port_value/[Database's port]/g' -e 's/user_value/[Database's username]/g' -e 's/password_value/[Database's password]/g' config.ini
@@ -12,6 +12,6 @@ sudo python3 create_table.py
 sudo pip3 install Flask
 sudo pip3 install -U flask-cors
 sudo pip3 install flask-api
-cd ~
+cd /
 cd A3/API
 sudo python3 api.py
