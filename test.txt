@@ -1,0 +1,7 @@
+## Test the auto scaling with the following command
+
+sudo amazon-linux-extras install epel -y
+
+sudo yum install stress -y
+
+stress -c 1
